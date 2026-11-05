@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Imbue', serif;
+    --font-sans: 'Raleway', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    height: 100%;
+    background-color: #09090b;
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #09090b;
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #ffffff;
+    color: #09090b;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Subtle Minimalist Glass Menu */
+.subtle-glass-menu {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  background: rgba(9, 9, 11, 0.72);
+}
+
+/* Editorial Minimal Transparent CTA Button with Thin White Border */
+.editorial-cta {
+  display: inline-block;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  padding: 0.85rem 2.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.editorial-cta:hover {
+  background-color: #ffffff;
+  color: #09090b;
+  border-color: #ffffff;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 1.5px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
