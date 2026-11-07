@@ -11,7 +11,7 @@ export interface TimelineController {
 export function createTimeline(callbacks: TimelineCallbacks): TimelineController {
   const container = document.createElement('div');
   container.className =
-    'absolute bottom-8 sm:bottom-10 md:bottom-12 left-0 w-full z-30 px-6 sm:px-10 md:px-16 pointer-events-auto select-none';
+    'absolute bottom-8 sm:bottom-10 md:bottom-12 left-0 w-full z-30 px-6 sm:px-10 md:px-16 pointer-events-auto';
 
   container.innerHTML = `
     <div class="max-w-xs sm:max-w-sm md:max-w-md" role="tablist" aria-label="Slides">

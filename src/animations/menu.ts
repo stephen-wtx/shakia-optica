@@ -29,9 +29,9 @@ export function initMenuAnimation(
     opacity: 0,
   });
 
-  // Initial state of hamburger lines: perfectly centered and balanced
-  gsap.set(lineTop, { y: -4, rotate: 0 });
-  gsap.set(lineBottom, { y: 4, rotate: 0 });
+  // Initial state of hamburger lines: perfectly centered and balanced, dark color
+  gsap.set(lineTop, { y: -4, rotate: 0, backgroundColor: '#18181B' });
+  gsap.set(lineBottom, { y: 4, rotate: 0, backgroundColor: '#18181B' });
 
   function openMenu() {
     if (open || isAnimating) return;
@@ -42,16 +42,18 @@ export function initMenuAnimation(
     hamburgerBtn.setAttribute('aria-label', 'Fechar menu');
     menuOverlay.style.pointerEvents = 'auto';
 
-    // Animate lines to a clean, centered "X"
+    // Animate lines to a clean, centered dark "X"
     gsap.to(lineTop, {
       y: 0,
       rotate: 45,
+      backgroundColor: '#18181B',
       duration: 0.35,
       ease: 'power2.inOut',
     });
     gsap.to(lineBottom, {
       y: 0,
       rotate: -45,
+      backgroundColor: '#18181B',
       duration: 0.35,
       ease: 'power2.inOut',
     });
@@ -97,16 +99,18 @@ export function initMenuAnimation(
     hamburgerBtn.setAttribute('aria-expanded', 'false');
     hamburgerBtn.setAttribute('aria-label', 'Abrir menu');
 
-    // Restore lines from "X" back to two parallel centered lines
+    // Restore lines from "X" back to two parallel centered lines in #18181B
     gsap.to(lineTop, {
       y: -4,
       rotate: 0,
+      backgroundColor: '#18181B',
       duration: 0.35,
       ease: 'power2.inOut',
     });
     gsap.to(lineBottom, {
       y: 4,
       rotate: 0,
+      backgroundColor: '#18181B',
       duration: 0.35,
       ease: 'power2.inOut',
     });
