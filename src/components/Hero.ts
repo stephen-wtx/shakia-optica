@@ -12,7 +12,7 @@ export function createHero(): {
   const heroSection = document.createElement('section');
   heroSection.id = 'hero';
   heroSection.className =
-    'relative w-full h-[100svh] min-h-[550px] overflow-hidden bg-[#09090b] select-none';
+    'relative w-full h-[100svh] min-h-[550px] overflow-hidden bg-[#09090b]';
 
   heroSection.innerHTML = `
     <!-- Slides Media Stack -->
@@ -60,14 +60,14 @@ export function createHero(): {
     <div class="slides-text-container absolute z-20 bottom-24 sm:bottom-28 md:bottom-32 left-6 sm:left-10 md:left-16 pointer-events-none w-full max-w-xl h-44">
       
       <!-- Slide 01 Text (Video) -->
-      <div class="slide-text-item absolute bottom-0 left-0 w-full" data-text-slide="0">
+      <div class="slide-text-item absolute bottom-0 left-0 w-full pointer-events-auto" data-text-slide="0">
         <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-light text-white leading-[0.96] mb-2 sm:mb-3">
           Shakia Óptica
         </h1>
         <p class="font-sans text-sm sm:text-base font-light text-white/85 mb-5 sm:mb-6">
           Saúde no seu olhar.
         </p>
-        <div class="pointer-events-auto inline-block">
+        <div class="inline-block">
           <a href="#catalogo" class="editorial-cta" aria-label="Ver catálogo">
             Ver catálogo
           </a>
@@ -75,14 +75,14 @@ export function createHero(): {
       </div>
 
       <!-- Slide 02 Text (IMG-1) -->
-      <div class="slide-text-item absolute bottom-0 left-0 w-full" data-text-slide="1">
+      <div class="slide-text-item absolute bottom-0 left-0 w-full pointer-events-auto" data-text-slide="1">
         <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-light text-white leading-tight">
           Óculos para cada momento.
         </h2>
       </div>
 
       <!-- Slide 03 Text (IMG-2) -->
-      <div class="slide-text-item absolute bottom-0 left-0 w-full" data-text-slide="2">
+      <div class="slide-text-item absolute bottom-0 left-0 w-full pointer-events-auto" data-text-slide="2">
         <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-light text-white leading-tight">
           Encontre o seu estilo.
         </h2>
