@@ -96,6 +96,43 @@ export function createFooter(): { element: HTMLElement } {
         </div>
       </div>
 
+      
+  <!-- Developed by MINDSTACK -->
+  <div class="pt-7 flex justify-center">
+    <a
+      href="https://mindstack-vh05.onrender.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mindstack-credit group inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-[#71717a]"
+      aria-label="Desenvolvido com amor pela MINDSTACK"
+    >
+      <span>Desenvolvido com</span>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="13"
+        height="13"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#f97316"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="mindstack-heart"
+      >
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/>
+      </svg>
+
+      <span>pela</span>
+
+      <span class="mindstack-brand relative">
+        MINDSTACK
+        <span class="mindstack-underline"></span>
+      </span>
+    </a>
+  </div>
+
+
       <!-- Bottom Bar -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] sm:text-xs text-[#71717a] font-light">
         <p>© 2026 Shakia Óptica, Lda. Todos os direitos reservados.</p>
